@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--Light-Gray);
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.primary-section {
+  width: 100%;
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--Cyan)
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--Bright-Yellow);
+  margin-bottom: .8rem;
+}
+
+.details {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+  max-width: 550px;
+}
+
+.secondary-section {
+  display: flex;
+  width: 100%;
+  color: var(--Light-Gray);
+}
+
+.right-side {
+  flex: 1;
+  background-color: var(--Cyan);
+  padding: 2rem;
+  border-radius: 0 0 0 10px;
+} 
+
+.price-details {
+  margin: .5rem 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.time {
+  opacity: .8;
+}
+
+.left-side {
+  flex: 1;
+  background-color: var(--Cyan);
+  opacity: .8;
+  border-radius: 0 0 10px 0;
+  padding: 2rem;
+}
+
+.left-side--title {
+  margin-bottom: 1rem;
+}
+
+.first-paragraph {
+  line-height: 1.5;
+}
+
+.sign-up--btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--Bright-Yellow);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 2rem auto 0;
+}
+
+.sign-up--btn:hover {
+  background-color: var(--white);
+  color: var(--Bright-Yellow);
+}
+
+.attribution { 
+  margin-top: 2rem;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (width < 768px) {
+  main {
+    max-width: 360px;
+    margin-top: 2rem;
+  }
+
+  .primary-section {
+    padding: 1.5rem;
+  }
+
+  .secondary-section {
+    flex-direction: column;
+  }
+
+  .right-side {
+    border-radius: 0;
+    padding: 1.5rem;
+  }
+
+  .left-side {
+    border-radius: 0 0 10px 10px;
+    padding: 1.5rem;
+  }
+}
