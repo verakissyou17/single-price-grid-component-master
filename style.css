@@ -28,10 +28,8 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   max-width: 630px;
   margin: 0 auto;
@@ -66,7 +64,8 @@ main {
 }
 
 .secondary-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   color: var(--Light-Gray);
 }
@@ -147,7 +146,8 @@ main {
   }
 
   .secondary-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
   }
 
   .right-side {
